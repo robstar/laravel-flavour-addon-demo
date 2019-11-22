@@ -1,0 +1,23 @@
+{
+    "name": "robstar/laravel-flavour-addon-demo",
+    "description": "Sample package to demo flavour integration into Laravel",
+    "keywords": ["laravel", "flavour", "demo"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Robstar\\LaravelFlavourAddonDemo\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Robstar\\LaravelFlavourAddonDemo\\ServiceProvider"
+            ]
+        }
+    }
+}

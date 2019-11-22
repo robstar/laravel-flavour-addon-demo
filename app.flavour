@@ -1,0 +1,18 @@
+spec: 0.1
+# which composer package ti install and which version
+install:
+  package: robstar/laravel-flavour-addon-demo:v0.1.0
+  # script to run after successful installation
+  post-install:
+  - php artisan vendor:publish --provider="Robstar\LaravelFlavourAddonDemo\ServiceProvider"
+meta:
+  name: composer/robstar/laravel-flavour-addon-demo
+  version: v0.1.0
+config:
+  # custom config values that can be injected into to application
+  background:
+    label: "Background color"
+    required: False
+    type: "scalar/string"
+    default: "#fff"
+    variable: WELCOME_PAGE_BACKGROUND_COLOR
